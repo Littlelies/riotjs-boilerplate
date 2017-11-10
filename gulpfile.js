@@ -37,6 +37,7 @@ gulp.task('default', "It runs sass copy ts libs.script and libs.css", ['copy', '
 gulp.task('watch', 'It runs the default task and then serve, while it serves whatch for files and run the task accordingly. If you are a developer you want to start from here' ,function (cb) {
     runSequence(['default','serve'],cb);
     gulp.watch(paths.app.copy, ['copy']);
+    gulp.watch(paths.app.copyapp, ['copy']);
     gulp.watch(paths.app.components, ['riot']);
     gulp.watch(paths.libs.script, ['libs.script']);
 });
