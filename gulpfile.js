@@ -9,10 +9,10 @@ var paths = require('./gulp_tasks/gulp.paths');
 ///	 Import modularized tasks
 ///
 
-// Imports Copy - just copy some file to the dist directorya
+// Imports Copy - just copy some file to the dist directory
 require('./gulp_tasks/gulp.copy')(gulp);
 
-// Imports libs script - compile all js file in one filec alled libs.js
+// Imports libs script - compile all js file in one file called libs.js
 require('./gulp_tasks/gulp.libs.script')(gulp);
 
 // Imports Serve - spin a development server on port 8000
